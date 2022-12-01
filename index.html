@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Survey form</title>
+    <link rel="stylesheet" href="styles.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@400;600&family=Montserrat:wght@400;900&family=Ubuntu&display=swap" rel="stylesheet">
+
+  </head>
+  <body>
+    <h1 id="title">Pinapple advisor Survey form <i class="fa-regular fa-pineapple"></i></h1>
+    <p id="discription">Thank you for taking your time to help us improve</p>
+    <form action="" id="survey-form">
+      <fieldset>
+        <label for="name" id="name-label">Name<input type="text" id="name" class="box" placeholder="Enter your name here..." required></label>
+        <label for="email" id="email-label">Email<input type="email" id="email" class="box" placeholder="Enter your email address here..." required></label>
+        <label for="age" id="number-label">Age (Optional)<input type="number" id="age" class="box" placeholder="Enter your age here..." min="13" max="99"></label>
+        <label for="dropdown">What was your issue?
+          <select id="dropdown" class="box">
+            <option value="">(Select one)</option>
+            <option value="1">Software Issue</option>
+            <option value="2">Hardware Issue</option>
+          </select>
+        </label>
+				<label for="">How likely would you recommand Pinapple to your friends? </label>
+          <label class="check-radio"> <input type="radio" name="recommand" value="" class="recommand"> Least Likely </label>
+          <label class="check-radio"> <input type="radio" name="recommand" value="" class="recommand"> Somewhat Likely </label>
+          <label class="check-radio"> <input type="radio" name="recommand" value="" class="recommand"> Most Likely </label>
+        <label for=""> Features you like about us: </label>
+          <label for="" class="check-radio"><input type="checkbox" class="features" value="Customer Service"> Customer Service</label>
+          <label for="" class="check-radio"><input type="checkbox" class="features" value="Products"> Products</label>
+          <label for="" class="check-radio"><input type="checkbox" class="features" value="Software"> Software</label>
+          <label for="" class="check-radio"><input type="checkbox" class="features" value="Phones"> Phones</label>
+          <label for="" class="check-radio"><input type="checkbox" class="features" value="Computers"> Computers</label>
+
+				<label for="">Any suggestions? <textarea name="comments" placeholder="Enter your comments here...." rows="4" class="box"></textarea> </label>
+
+				<input type="submit" id="submit" value="Submit">
+
+      </fieldset>
+
+
+    </form>
+  </body>
+</html>
